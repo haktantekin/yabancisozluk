@@ -13,7 +13,10 @@ function replace_text_wps($text){
       'amp;' => ' ',
       '#8230;'=>' ',
       '#8221;'=>' ',
-
+      '#8220;'=>'"',
+      '#8217;'=>'\'',
+      '#8212;'=>'--',
+      '#8216;'=>'\'',
   );
   $text = str_replace(array_keys($replace), $replace, $text);
   return $text;

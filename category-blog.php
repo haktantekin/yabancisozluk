@@ -10,12 +10,9 @@
             $category_name = $the_cat[0]->cat_name;
             $category_link = get_category_link($the_cat[0]->cat_ID);
             ?>
-            <div class="word-list-item">
-                <div class="word-list-item-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                <div class="word-list-item-tags">
-                    <?php the_tags(' ', ' ', ' ');
-                    ?> <?php the_category('') ?>
-                </div>
+            <div class="word-list-item full">
+                <div class="word-list-item-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                <div class="word-list-item-text"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
             </div>
         <?php endwhile; ?>
         <?php wpex_pagination(); ?>

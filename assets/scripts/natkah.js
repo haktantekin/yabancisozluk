@@ -5,7 +5,7 @@ WebFont.load({
 });
 
 // Analytics 
-// window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-67DGC1MGCF');
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-CLHYN8KHT0');
 // Analytics
 
 document.querySelector('.js-nav-icon').addEventListener('click', function () {

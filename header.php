@@ -42,7 +42,7 @@
   <header>
     <div class="container">
       <div class="header-flex">
-        <div class="logo"><a href="/"><img src="assets/img/logo.png" width="70" /></a></div>
+        <div class="logo"><a href="/"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" width="150" height="64" /></a></div>
         <div class="nav-icon js-nav-icon">
           <i class="fas fa-ellipsis-v"></i>
         </div>

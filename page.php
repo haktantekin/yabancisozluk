@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 <section class="content content-detail">
-    <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
-            <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'full');
-            $nowebp = str_replace(".webp", "", $url);
-            $nowebp = $nowebp;
-            ?>
+<?php
+    $args = array('category__in' => array(1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15),);
+    $the_query = new WP_Query($args);
+    ?>
+    <?php if ($the_query->have_posts()) : ?>
+        <?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
             <h1><?php the_title(); ?></h1>
             <div class="content-in">
                 <div class="content-section info-section">
